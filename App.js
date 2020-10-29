@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as ScreenOrientation from 'expo-screen-orientation';
 
-export default App = () => {
+const App = () => {
   useEffect(() => {
     ScreenOrientation.addOrientationChangeListener(() => console.log('Orientation Changed'));
     return () => ScreenOrientation.removeOrientationChangeListeners();
@@ -25,3 +25,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
