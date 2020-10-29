@@ -5,7 +5,7 @@ import * as ScreenOrientation from 'expo-screen-orientation';
 
 const App = () => {
   useEffect(() => {
-    ScreenOrientation.addOrientationChangeListener(() => console.log('Orientation Changed'));
+    ScreenOrientation.addOrientationChangeListener(() => alert('Orientation Changed'));
     return () => ScreenOrientation.removeOrientationChangeListeners();
   });
 
